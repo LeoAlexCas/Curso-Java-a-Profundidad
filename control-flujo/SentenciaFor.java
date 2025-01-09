@@ -53,5 +53,18 @@ class SentenciaFor {
                 System.out.println(String.format("%d x %d = %d", tabla, i, (tabla*i)));
             }
         }
+
+        System.out.println("=========================");
+
+        //Ejercicio con factorial
+        for(int i = 2; i <= 5; i++) {
+            System.out.println(String.format("Factorial de %d", i));
+            int fact = 1;
+            for(int j = 1; j <= i; j++) {
+                fact *= j;
+            }
+
+            System.out.println(String.format("Resultado %d", fact)); 
+        }
     }
 }
