@@ -1,0 +1,21 @@
+# Ignorar archivos de clase compilados
+*.class
+
+# Ignorar archivos de registro
+*.log
+
+# Ignorar archivos de configuración de IDEs
+/.idea/
+/*.iml
+/.project
+/.classpath
+/.settings/
+
+# Ignorar directorios de compilación
+/bin/
+/build/
+/target/
+
+# Ignorar archivos generados por el sistema operativo
+.DS_Store
+Thumbs.db
