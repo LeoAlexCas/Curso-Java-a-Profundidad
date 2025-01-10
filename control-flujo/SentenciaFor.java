@@ -66,5 +66,32 @@ class SentenciaFor {
 
             System.out.println(String.format("Resultado %d", fact)); 
         }
+
+
+        System.out.println("=========================");
+        //Ejercicio piramide
+        String pyramid = "";
+        String chara = "*";
+        String oneEmpty = " ";
+        
+        for(int i = 1; i <= 5; i++) {
+            pyramid = pyramid + chara;
+            System.out.println(pyramid);
+        }
+
+        System.out.println("=========================");
+        //Ejercicio piramide invertida
+        String empty2 = "";
+        String inverted2 = "";
+        String pyramid2 = "";
+        for(int i = 1; i <= 5; i++) {
+            empty2 = "";
+            for(int j = 4; j >= i; j--) {
+                empty2 = empty2 + oneEmpty;
+            }
+            inverted2 = inverted2 + chara;
+            pyramid2 = empty2 + inverted2;
+            System.out.println(pyramid2);
+        }
     }
 }
