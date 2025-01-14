@@ -14,6 +14,7 @@ class Persona {
     //Entonces si al crear el objetos se mandan los argumentos que estan en este, usara este, si no usara el otro
     Persona(String name, int age, char gender) {
         //Esta linea llama a this. O sea al contructor, como no le pasamos argumentos, esta llamando al constructor que no recibe parametros y por lo tanto se imprimira el log
+        //Si se quiere llamar otro constructor dentro del constructor, debe ser en la primera linea de lo contrario dara error
         this();
 
         //Al parecer en java el uso de this es opcional a menos que haya alcances de nombres entre variables y se quiera especificar una
