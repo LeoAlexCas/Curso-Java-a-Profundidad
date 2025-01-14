@@ -10,11 +10,16 @@ class Persona {
         System.out.print("El constructor");
     }
 
-    //En java el constructor se puede declarar mas de una vez, pero al parecer solo se ejecuta el ultimo
+    //En java el constructor se puede declarar mas de una vez - JAVA sabe cuando un constructor esta siendo llamado y no el otro, esto gracias a que, se basa en los argumentos que se dan
+    //Entonces si al crear el objetos se mandan los argumentos que estan en este, usara este, si no usara el otro
     Persona(String name, int age, char gender) {
-        nombre = name;
-        edad = age;
-        genero = gender;
+        //Esta linea llama a this. O sea al contructor, como no le pasamos argumentos, esta llamando al constructor que no recibe parametros y por lo tanto se imprimira el log
+        this();
+
+        //Al parecer en java el uso de this es opcional a menos que haya alcances de nombres entre variables y se quiera especificar una
+        this.nombre = name;
+        this.edad = age;
+        this.genero = gender;
     }
 
     //Metodos
